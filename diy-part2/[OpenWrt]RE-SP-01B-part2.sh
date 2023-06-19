@@ -30,7 +30,7 @@ mod_default_config(){
     sed -i "s/'UTC'/'CST-8'\n        set system.@system[-1].zonename='Asia\/Shanghai'/g" package/base-files/files/bin/config_generate
 
     echo '修改主机名为 JDC_Mark1'
-    sed -i 's/OpenWrt/JDC_Mark1/g' package/base-files/files/bin/config_generate
+    sed -i 's/OpenWrt/JDC_Openwrt/g' package/base-files/files/bin/config_generate
 
     # C2
     echo '修改默认主题为老竭力的 argon'
