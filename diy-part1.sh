@@ -16,9 +16,6 @@
 # Add a feed source
 #echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
 #echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
-sed -i '$a src-git liuran001_packages https://github.com/liuran001/openwrt-packages' feeds.conf.default
-sed -i '$a src-git coolsnowwolf_packages https://github.com/coolsnowwolf/packages' feeds.conf.default
-sed -i '$a src-git coolsnowwolf_luci https://github.com/coolsnowwolf/luci' feeds.conf.default
 
 #=========================================
 # add feeds
@@ -32,6 +29,9 @@ if [ -e feeds.conf.default ]; then
 src-git kenzo https://github.com/kenzok8/openwrt-packages
 # passwall 等的依赖
 src-git small https://github.com/kenzok8/small
+src-git liuran001_packages https://github.com/liuran001/openwrt-packages'
+src-git coolsnowwolf_packages https://github.com/coolsnowwolf/packages
+src-git coolsnowwolf_luci https://github.com/coolsnowwolf/luci
 
 EOF
     echo 已增补内容至默认源配置文件[feeds.conf.default]
